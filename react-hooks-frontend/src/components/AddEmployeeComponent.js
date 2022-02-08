@@ -15,7 +15,7 @@ const AddEmployeeComponent = () => {
       setLastName(response.data.lastName);
       setEmailId(response.data.emailId);
     }).catch(error => console.log(error));
-  }, []);
+  }, [id]);
 
   const firstNameHandler = (event) => {
     setFirstName(event.target.value);
